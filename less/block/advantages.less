@@ -1,0 +1,27 @@
+.advantages {
+  background: url("img/bg-advantages.jpg") repeat;
+  padding: 45px 0;
+  border-bottom: 3px solid @color-danger;
+
+  &__container {
+    &:extend(.container);
+  }
+
+  &__list {
+    &:extend(.row);
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  &__item {
+    &:extend(.col-md-6);
+    &:extend(.col-lg-3);
+
+    h3 {
+      font-size: @font-size--h3;
+      color: @black;
+      text-transform: uppercase;
+    }
+  }
+}

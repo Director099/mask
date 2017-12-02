@@ -1,0 +1,27 @@
+.selection {
+  background: @white;
+  padding: 20px;
+  box-shadow: 0 0 15px 5px fade(@black, 5%);
+
+  img {
+    &:extend(.img-fluid);
+    display: block;
+    margin: 30px auto;
+  }
+
+  h3 {
+    font-size: @font-size--h3;
+    text-transform: uppercase;
+    color: @black;
+    text-align: center;
+
+    span {
+      display: block;
+      font-size: @font-size--h1;
+    }
+  }
+
+  p {
+    text-indent: 1.5em;
+  }
+}

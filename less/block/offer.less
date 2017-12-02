@@ -1,0 +1,17 @@
+.offer {
+  .padding-ident();
+
+  &__container {
+    &:extend(.container);
+  }
+
+  &__list {
+    &:extend(.row);
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__item {
+    &:extend(.col-md-4);
+  }
+}

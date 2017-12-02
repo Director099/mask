@@ -1,0 +1,32 @@
+body {
+  font: 700 @font-size "HelveticaNeue", "Arial", sans-serif;
+  color: @text-color;
+  background: @gray-lightest-2;
+}
+
+a {
+  color: @color-link;
+  cursor: pointer;
+  transition: @transition-time;
+
+  &:hover {
+    text-decoration: none;
+    color: @color-link--hover;
+  }
+}
+
+button {
+  transition: @transition-time;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  background: @btn-bg;
+  color: @white;
+  text-transform: uppercase;
+  border-radius: 0px;
+}
