@@ -25,8 +25,31 @@ img {
 }
 
 .btn {
-  background: @btn-bg;
+  background-color: @btn-bg;
   color: @white;
   text-transform: uppercase;
   border-radius: 0px;
+  cursor: pointer;
+
+  &--send {
+    display: block;
+    margin: 0 auto;
+    max-width: 220px;
+    width: 100%;
+  }
+
+  &--video {
+    font-size: 24px;
+    padding: 10px 35px 10px 85px;
+    background-image: url("img/sprite/youtube.svg");
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: 15%;
+    z-index: 1;
+
+    &:hover {
+      color: @white;
+      background-color: darken(@btn-bg, 5%);
+    }
+  }
 }

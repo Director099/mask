@@ -2,15 +2,22 @@
   display: flex;
 
   &__link {
-    display: block;
+    display: flex;
+    align-items: flex-end;
     background: @color-danger;
     text-transform: uppercase;
     color: @white;
+    font-family: "BebasNeuebold";
     margin-right: 20px;
-    padding: 45px 15px 20px;
+    padding: 40px 10px 5px;
+    font-size: 26px;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:hover {
+      color: @white;
     }
   }
 }

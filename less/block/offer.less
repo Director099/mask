@@ -14,4 +14,42 @@
   &__item {
     &:extend(.col-md-4);
   }
+
+  &__title {
+    position: relative;
+    display: block;
+    max-width: 350px;
+    margin: 0 auto 60px;
+    font-size: @font-size--h2;
+    font-style: italic;
+    padding: 10px 20px;
+    color: @white;
+    text-transform: uppercase;
+    background: @gray-darker;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: -10px;
+      height: 100%;
+      border-left: 10px solid transparent;
+      border-bottom: 60px solid @gray-darker;
+      border-right: 0px solid transparent;
+      border-top: 0px solid transparent;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: -10px;
+      height: 100%;
+      transform: rotate(180deg;);
+      border-left: 10px solid transparent;
+      border-bottom: 60px solid @gray-darker;
+      border-right: 0px solid transparent;
+      border-top: 0px solid transparent;
+    }
+  }
 }
